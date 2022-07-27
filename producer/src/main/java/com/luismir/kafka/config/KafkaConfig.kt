@@ -16,7 +16,7 @@ import org.springframework.kafka.core.KafkaAdmin
 open class KafkaConfig(
     @Value("\${kafka.bootstrapAddress}")
     private val server: String, //Kafka server
-    @Value("\${kafka.bootstrapAddress}")
+    @Value("\${kafka.topics.driver_location}")
     private val topic: String //topic to send events
 ) {
 
