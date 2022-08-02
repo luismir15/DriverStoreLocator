@@ -1,10 +1,10 @@
-server:
-  port: 9060
-
 kafka:
   bootstrapAddress: localhost:9092
   topics:
     driver_location: driver_location
+
+server:
+  port: 9060
 
 logging:
   level:
