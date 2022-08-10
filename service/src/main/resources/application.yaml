@@ -7,7 +7,6 @@ spring:
     username: user
     password: user123
     driver-class-name: com.mysql.cj.jdbc.Driver
-    type: org.apache.tomcat.jdbc.pool.DataSource
   jpa:
     show-sql: false
     hibernate:
