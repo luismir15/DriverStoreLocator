@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
 
 data class Driver(
     @JsonProperty("email")
-    val email: String,
+    val driverID: String,
     @JsonProperty("latitude")
     val latitude: Double,
     @JsonProperty("longitude")
