@@ -2,10 +2,18 @@ package com.luismir.kafka.service;
 
 import com.luismir.kafka.model.DriverDistance;
 import com.luismir.kafka.model.Store;
+import com.luismir.kafka.repo.StoreRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
 public class StoreServiceImpl implements StoreService {
+
+    private final StoreRepo storeRepo;
+
+    public StoreServiceImpl(StoreRepo storeRepo) {
+        this.storeRepo = storeRepo;
+    }
 
     @Override
     public void saveStore(Store store) {
