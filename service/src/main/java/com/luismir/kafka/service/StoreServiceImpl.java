@@ -11,24 +11,25 @@ public class StoreServiceImpl implements StoreService {
 
     private final StoreRepo storeRepo;
 
+    @Autowired
     public StoreServiceImpl(StoreRepo storeRepo) {
         this.storeRepo = storeRepo;
     }
 
     @Override
     public void saveStore(Store store) {
-
+        storeRepo.save(store);
     }
 
     @Override
     public Store getStoreById(String id) {
-        return null;
+        return storeRepo.findStoreByStoreId(id);
     }
 
 
     @Override
     public List<Store> getAllStore() {
-        return null;
+        return storeRepo.findAll();
     }
 
     @Override
