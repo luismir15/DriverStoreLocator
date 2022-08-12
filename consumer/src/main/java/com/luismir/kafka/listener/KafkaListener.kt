@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component
 @Component
 class KafkaListeners {
 
-    @KafkaListener(topics = ["driver_location"])
+    @KafkaListener(topics = ["driver_location"], groupId = "default")
     fun listener(data: Driver) {
         println("listener received: $data")
     }
