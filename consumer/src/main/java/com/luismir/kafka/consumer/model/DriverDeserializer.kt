@@ -1,4 +1,4 @@
-package com.luismir.kafka.model
+package com.luismir.kafka.consumer.model
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.apache.kafka.common.errors.SerializationException

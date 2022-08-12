@@ -1,4 +1,4 @@
-package com.luismir.kafka.model
+package com.luismir.kafka.consumer.model
 
 import com.fasterxml.jackson.annotation.JsonProperty
 

@@ -1,6 +1,6 @@
-package com.luismir.kafka.listener
+package com.luismir.kafka.consumer.listener
 
-import com.luismir.kafka.model.Driver
+import com.luismir.kafka.consumer.model.Driver
 import org.springframework.kafka.annotation.KafkaListener
 import org.springframework.stereotype.Component
 

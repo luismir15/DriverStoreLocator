@@ -1,4 +1,4 @@
-package com.luismir.kafka.config
+package com.luismir.kafka.consumer.config
 
 import org.apache.kafka.clients.admin.AdminClientConfig
 import org.apache.kafka.clients.admin.NewTopic

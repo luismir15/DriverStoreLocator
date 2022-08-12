@@ -1,4 +1,4 @@
-package com.luismir.kafka
+package com.luismir.kafka.consumer
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
