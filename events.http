@@ -1,0 +1,27 @@
+### POST events to cluster
+POST http://localhost:9060/
+Content-Type: application/json
+
+{
+  "driverID": "spam@email.net",
+  "latitude": 12.29324,
+  "longitude": -8.3243543
+}
+
+### POST stores to db
+POST http://localhost:9080/stores
+Content-Type: application/json
+
+{
+  "storeId": "1234",
+  "latitude": 23.49314,
+  "longitude": 104.2133
+}
+
+### GET N drivers around store
+GET http://localhost:9080/stores/1234/drivers?n=3
+Accept: application/json
+
+### GET stores
+GET http://localhost:9080/stores
+Accept: application/json
