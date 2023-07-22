@@ -3,7 +3,7 @@ package com.luismir.kafka.consumer.model
 import com.fasterxml.jackson.annotation.JsonProperty
 
 data class Driver(
-    @JsonProperty("email")
+    @JsonProperty("driverID")
     val driverID: String,
     @JsonProperty("latitude")
     val latitude: Double,

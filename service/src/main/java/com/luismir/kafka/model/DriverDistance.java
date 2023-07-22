@@ -5,11 +5,12 @@ import lombok.Data;
 @Data
 public class DriverDistance {
 
-    private String email;
+    private String driverID;
 
-    private double latitude;
+    private double distance;
 
-    private double longitude;
-
-    private double distanceFromStore;
+    public DriverDistance(String driverID, double distance) {
+        this.driverID = driverID;
+        this.distance = distance;
+    }
 }

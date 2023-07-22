@@ -4,7 +4,23 @@ kafka:
     driver_location: driver_location
 
 server:
-  port: 9070
+  port: 9080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db
+    username: user
+    password: user123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
 logging:
   level:
